@@ -1,133 +1,105 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李敏瑛（Purida Bechekau）個人介紹</title>
-    <style>
-        body {
-            font-family: "Noto Sans TC", sans-serif;
-            margin: 0;
-            background: linear-gradient(135deg, #fbeaff, #fff5f7);
-            color: #333;
-            overflow-x: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李敏瑛 Purida bachekau 的個人介紹</title>
 
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #f7d7f5;
-            color: #5c2d91;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #fff7f8;
+      margin: 0;
+      padding: 0;
+    }
 
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+    header {
+      text-align: center;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 30px 10px;
+    }
 
-        header p {
-            font-size: 1.2em;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
 
-        section {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
-        }
+    /* 讓個人介紹區域更美觀 */
+    .intro-section {
+      max-width: 700px;
+      background-color: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    /* ⭐ 加大個人照片，並置中展示 */
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffb6c1;
+      display: block;
+      margin: 0 auto 20px;
+    }
 
-        h2 {
-            color: #9b4d96;
-            border-left: 6px solid #f7aef8;
-            padding-left: 10px;
-        }
+    h2 {
+      color: #ff69b4;
+      margin-top: 20px;
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    p {
+      color: #555;
+      line-height: 1.7;
+      margin: 8px 0;
+    }
 
-        li {
-            padding: 8px 0;
-            font-size: 1.1em;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #f7d7f5;
-            color: #5c2d91;
-            font-size: 0.9em;
-        }
-
-        /* 小動畫：滑入效果 */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        section.visible {
-            animation: fadeIn 1s ease forwards;
-        }
-    </style>
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>李敏瑛（Purida Bechekau）</h1>
-        <p>泰國｜女｜2006 年 11 月 8 日出生</p>
-    </header>
+  <header>
+    <h1>李敏瑛 Purida bachekau</h1>
+    <p>來自泰國的陽光女孩 🌸</p>
+  </header>
 
-    <section>
-        <h2>✨ 興趣</h2>
-        <ul>
-            <li>🎧 聽音樂</li>
-            <li>🎬 看電影</li>
-            <li>💤 睡覺</li>
-        </ul>
-    </section>
+  <div class="intro-section">
 
-    <section>
-        <h2>🍢 想體驗</h2>
-        <ul>
-            <li>夜市美食</li>
-            <li>熱鬧氣氛</li>
-        </ul>
-    </section>
+    <!-- ⭐ 新增個人大頭照（把路徑換成你的照片） -->
+    <img src="images/yourphoto.png" alt="個人照片" class="profile-photo">
 
-    <footer>
-        © 2025 Purida Bechekau | 個人介紹網頁
-    </footer>
+    <h2>關於我</h2>
+    <p><strong>國籍：</strong>泰國</p>
+    <p><strong>年齡：</strong>19 歲</p>
+    <p><strong>興趣：</strong>聽音樂、睡覺、吃東西</p>
+    <p><strong>想體驗：</strong>吃喝玩樂</p>
 
-    <script>
-        // 滾動顯示動畫
-        const sections = document.querySelectorAll('section');
+    <h2>自我介紹</h2>
+    <p>
+      大家好！我是李敏瑛，來自泰國，目前在台灣就讀大學。
+      我喜歡探索不同的文化、美食與音樂。
+      希望能在這裡體驗更多有趣的事物，結交世界各地的朋友 💕
+    </p>
 
-        function showSections() {
-            const trigger = window.innerHeight * 0.85;
+    <h2>聯絡方式</h2>
+    <p>Email：<a href="mailto:huynhanh@example.com">puridamachekuy@gmil.com</a></p>
+    <p>Instagram：<a href="https://www.instagram.com/" target="_blank">@puridabechekau</a></p>
+  </div>
 
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < trigger) {
-                    section.classList.add('visible');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', showSections);
-        window.addEventListener('load', showSections);
-    </script>
+  <footer>
+    © 2025 Purida bachekau | Designed with 💖
+  </footer>
 
 </body>
 </html>
