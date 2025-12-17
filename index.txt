@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李敏瑛 Purida Bechekau 的個人介紹</title>
+
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #fff7f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .intro-section {
+      max-width: 750px;
+      background-color: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffb6c1;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    h2 {
+      color: #ff69b4;
+      margin-top: 25px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.7;
+      margin: 10px 0;
+    }
+
+    a {
+      color: #ff69b4;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>李敏瑛 Purida Bechekau</h1>
+    <p>來自泰國的清邁女孩 🌸</p>
+  </header>
+
+  <div class="intro-section">
+
+    <!-- 個人大頭照 -->
+    <img src="images/yourphoto.png" alt="個人照片" class="profile-photo">
+
+    <h2>基本資料</h2>
+    <p><strong>國籍：</strong>泰國</p>
+    <p><strong>年齡：</strong>19 歲</p>
+
+    <h2>興趣與學習方向</h2>
+    <p>
+      我的興趣是學習新科技、了解企業運作流程，以及進行資料整理與分析。  
+      此外，我也喜歡學習語言與聽音樂，持續提升溝通能力，並在工作中培養細心與效率。
+    </p>
+    <p>
+      吃喝玩樂之外，也想嘗試一些以前沒做過的事情，拓展自己的視野與經驗。
+    </p>
+
+    <h2>自我介紹</h2>
+    <p>
+      大家好！我是李敏瑛，來自泰國，目前在台灣就讀大學。  
+      我喜歡探索不同文化、美食與音樂，也樂於學習新事物並提升自我能力。  
+      希望能在台灣累積實務經驗，並結交來自不同背景的朋友。
+    </p>
+
+    <h2>工作經驗（泰國）</h2>
+    <p>
+      在泰國工作期間，我主要協助公司處理文件相關事務，  
+      包括資料整理、文件建立與基本審核，並與同事進行日常溝通，  
+      以確保資料內容正確無誤。
+    </p>
+    <p>
+      透過這段工作經驗，我培養了細心與責任感，  
+      也更加了解企業的基本運作流程。
+    </p>
+
+    <h2>個人優點</h2>
+    <p>
+      我做事認真負責，對文件與資料處理相當細心，  
+      能準時完成交辦事項，並願意主動學習新事物，  
+      配合團隊共同完成工作目標。
+    </p>
+
+    <h2>個人缺點</h2>
+    <p>
+      面對不熟悉的工作內容時，初期可能需要較多時間學習與確認細節。  
+      目前仍持續累積實務經驗，期望未來能提升工作效率與專業能力。
+    </p>
+
+    <h2>對自己的期許</h2>
+    <p>
+      我期許自己能持續精進專業知識，熟悉公司系統與各項工作流程，  
+      提升文件建立與審核的能力，並在團隊中發揮責任感，  
+      為公司創造實質價值。
+    </p>
+
+    <h2>聯絡方式</h2>
+    <p>Email：
+      <a href="mailto:puridamachekuy@gmail.com">
+        puridamachekuy@gmail.com
+      </a>
+    </p>
+    <p>Instagram：
+      <a href="https://www.instagram.com/puridabechekau" target="_blank">
+        @puridabechekau
+      </a>
+    </p>
+
+  </div>
+
+  <footer>
+    © 2025 Purida Bechekau | Designed with 💖
+  </footer>
+
+</body>
+</html>
