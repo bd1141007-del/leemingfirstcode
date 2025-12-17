@@ -99,6 +99,38 @@
       font-size: 0.9em;
       padding: 25px;
     }
+
+    .highlight {
+      background-color: #fff0f5;
+      border-radius: 12px;
+      padding: 12px 15px;
+      margin: 15px 0;
+      display: inline-block;
+      font-size: 0.95em;
+    }
+
+    /* 吉祥物样式 */
+    .mascot {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+      z-index: 1000;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .mascot:hover {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+
   </style>
 </head>
 
@@ -129,38 +161,31 @@
     <h2>🎧 興趣與學習方向</h2>
     <p>
       我的興趣是學習新科技、了解企業運作流程，以及進行資料整理與分析。  
-      此外，我也喜歡學習語言與聽音樂，持續提升溝通能力，  
-      並在工作中培養細心與效率。
+      此外，我也喜歡學習語言與聽音樂，持續提升溝通能力，並在工作中培養細心與效率。
     </p>
     <p>
-      吃喝玩樂之外，也想嘗試一些以前沒做過的事情，  
-      為生活與學習增添更多可能性 ✨
+      吃喝玩樂之外，也想嘗試一些以前沒做過的事情，為生活與學習增添更多可能性 ✨
     </p>
 
     <h2>🌏 自我介紹</h2>
     <p>
       大家好！我是李敏瑛，來自泰國，目前在台灣就讀大學。  
-      我喜歡探索不同文化、美食與音樂，  
-      也樂於學習新事物並提升自我能力。  
+      我喜歡探索不同文化、美食與音樂，也樂於學習新事物並提升自我能力。  
       希望能在台灣累積實務經驗，逐步成長為更專業的人 🌱
     </p>
 
     <h2>💼 工作經驗（泰國）</h2>
     <p>
-      在泰國工作期間，我主要協助公司處理文件相關事務，  
-      包括資料整理、文件建立與基本審核，  
+      在泰國工作期間，我主要協助公司處理文件相關事務，包括資料整理、文件建立與基本審核，  
       並與同事進行日常溝通，以確保資料正確無誤。
     </p>
     <p>
-      透過這段經驗，我培養了細心與責任感，  
-      也更加了解企業的基本運作流程。
+      透過這段經驗，我培養了細心與責任感，也更加了解企業的基本運作流程。
     </p>
 
     <h2>👍 個人優點</h2>
     <p>
-      我做事認真負責，對文件與資料處理相當細心，  
-      能準時完成交辦事項，並願意主動學習新事物，  
-      配合團隊完成工作目標。
+      我做事認真負責，對文件與資料處理相當細心，能準時完成交辦事項，並願意主動學習新事物，配合團隊完成工作目標。
     </p>
 
     <h2>🧩 個人缺點</h2>
@@ -171,10 +196,21 @@
 
     <h2>✨ 對自己的期許</h2>
     <p>
-      我期許自己能持續精進專業知識，  
-      熟悉公司系統與各項工作流程，  
-      提升文件建立與審核能力，  
-      並在團隊中發揮責任感，為公司創造實質價值。
+      我期許自己能持續精進專業知識，熟悉公司系統與各項工作流程，  
+      提升文件建立與審核能力，並在團隊中發揮責任感，為公司創造實質價值。
+    </p>
+
+    <h2>💗 網站形象說明</h2>
+    <p class="highlight">
+      第一眼給人「可愛、親切」的印象，內容則展現「認真、可靠」。<br>
+      適合台灣實習、打工，也能讓老師、公司或朋友留下好印象 🌸💼✨
+    </p>
+    <p class="highlight">
+      如果願意，網站還可以升級：<br>
+      🐰 設計專屬小吉祥物<br>
+      🌐 中 / 英 / 泰文切換<br>
+      📱 優化手機版超可愛版<br>
+      📄 改成履歷＋作品集網站
     </p>
 
     <h2>📮 聯絡方式</h2>
@@ -191,10 +227,37 @@
 
   </div>
 
+  <!-- 小兔吉祥物 -->
+  <img src="images/rabbit-blink.png" alt="小兔吉祥物" class="mascot" id="mascot">
+
   <footer>
     © 2025 Purida Bechekau <br>
     用心學習中｜努力成長中 🌱
   </footer>
+
+  <script>
+    const mascot = document.getElementById('mascot');
+
+    // 吉祥物动作数组
+    const actions = [
+      'images/rabbit-blink.png',   // 眨眼
+      'images/rabbit-wave.png',    // 揮手
+      'images/rabbit-book.png'     // 拿書
+    ];
+
+    let index = 0;
+
+    // 每3秒切换动作
+    setInterval(() => {
+      index = (index + 1) % actions.length;
+      mascot.src = actions[index];
+    }, 3000);
+
+    // 点击吉祥物弹出欢迎信息
+    mascot.addEventListener('click', () => {
+      alert('嗨～歡迎來到我的網站 💖');
+    });
+  </script>
 
 </body>
 </html>
