@@ -1,6 +1,3 @@
-當然可以，這是根據你的需求整理過的內容，並將其融入到你的 HTML 檔案中。
-
-```html
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -42,7 +39,6 @@
     header h1 {
       margin: 0;
       font-size: 2.6em;
-      text-shadow: 0 2px 8px rgba(255,255,255,0.7);
     }
 
     header p {
@@ -50,7 +46,7 @@
       font-size: 1.1em;
     }
 
-    /* ===== 3D Cinderella ===== */
+    /* ===== 3D Section ===== */
     .cinderella-section {
       text-align: center;
       margin: 60px 0 30px;
@@ -60,7 +56,6 @@
       width: 320px;
       height: 430px;
       margin: auto;
-      background: transparent;
       filter: drop-shadow(0 0 45px rgba(255,180,220,0.95));
       animation: float3d 5s ease-in-out infinite;
     }
@@ -76,7 +71,6 @@
       font-size: 1.3em;
       color: #ff69b4;
       font-weight: bold;
-      letter-spacing: 1px;
     }
 
     /* ===== Main Card ===== */
@@ -98,12 +92,6 @@
       object-fit: cover;
       border: 8px solid #ffd1e6;
       margin-bottom: 25px;
-      box-shadow: 0 0 30px rgba(255,182,213,0.9);
-      transition: transform 0.4s ease;
-    }
-
-    .profile-photo:hover {
-      transform: scale(1.1) rotate(2deg);
     }
 
     .cute-tags span {
@@ -114,13 +102,11 @@
       border-radius: 30px;
       margin: 6px;
       font-size: 0.9em;
-      box-shadow: 0 4px 10px rgba(255,182,213,0.4);
     }
 
     h2 {
       color: #ff69b4;
       margin-top: 38px;
-      font-size: 1.45em;
     }
 
     h2::after { content: " ✨"; }
@@ -128,37 +114,65 @@
     p {
       color: #666;
       line-height: 1.9;
-      font-size: 1em;
       margin: 14px 0;
     }
 
+    /* ===== Cute Roles ===== */
+    .cute-roles {
+      margin: 60px 0;
+    }
+
+    .role-cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .role-card {
+      background: linear-gradient(135deg, #fff0f7, #ffe1ee);
+      width: 220px;
+      padding: 26px 20px;
+      border-radius: 28px;
+      border: 3px solid #ffd1e6;
+      box-shadow: 0 10px 25px rgba(255,170,200,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .role-card:hover {
+      transform: translateY(-8px) scale(1.05);
+    }
+
+    .role-icon {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .role-card h3 {
+      color: #ff69b4;
+      margin-bottom: 8px;
+    }
+
+    /* ===== Gallery ===== */
     .photo-gallery {
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin: 32px 0;
       flex-wrap: wrap;
+      margin: 30px 0;
     }
 
     .gallery-photo {
       width: 200px;
       height: 200px;
-      object-fit: cover;
       border-radius: 22px;
+      object-fit: cover;
       border: 4px solid #ffd1e6;
-      box-shadow: 0 8px 20px rgba(255,170,200,0.55);
-    }
-
-    a {
-      color: #ff4fa1;
-      font-weight: 600;
-      text-decoration: none;
     }
 
     footer {
       text-align: center;
       color: white;
-      font-size: 0.95em;
       padding: 35px;
       background: linear-gradient(135deg, #ff9acb, #ff6fb3);
     }
@@ -172,93 +186,69 @@
   <p>來自泰國的清邁女孩 🇹🇭</p>
 </header>
 
-<!-- REAL 3D CINDERELLA -->
 <section class="cinderella-section">
-  <model-viewer
-    src="images/cinderella3d.glb"
-    alt="3D Cinderella Princess"
-    auto-rotate
-    camera-controls
-    disable-zoom
-    shadow-intensity="1"
-    exposure="1.1">
-  </model-viewer>
+  <model-viewer src="images/cinderella3d.glb" auto-rotate camera-controls disable-zoom></model-viewer>
   <div class="magic-text">Once Upon a Time ✨</div>
 </section>
 
 <div class="intro-section">
 
-  <img src="images/mypic_22.png" alt="個人大頭照" class="profile-photo">
+  <img src="images/mypic_22.png" class="profile-photo">
 
   <div class="cute-tags">
     <span>🇹🇭 泰國女孩</span>
     <span>📚 愛學習</span>
-    <span>🎵 音樂控</span>
     <span>💻 新科技</span>
-    <span>✨ 新體驗中</span>
+    <span>🎵 音樂控</span>
   </div>
 
   <h2>📌 基本資料</h2>
-  <p><strong>國籍：</strong>泰國</p>
-  <p><strong>年齡：</strong>19 歲</p>
+  <p>國籍：泰國 ｜ 年齡：19 歲</p>
 
   <h2>🎯 興趣與學習方向</h2>
   <p>
     我的興趣是學習新科技、了解企業運作流程，  
     以及整理與分析相關資料。  
-    我也喜歡學習語言，提升溝通能力，並在工作中培養細心與效率。
+    也喜歡學習語言，提升溝通能力。
   </p>
 
-  <h2>🙋‍♀️ 自我介紹</h2>
-  <p>
-     大家好！我是李敏瑛，來自泰國，目前在台灣就讀大學。
-      我喜歡探索不同的文化、美食與音樂，
-      希望能在這裡體驗更多有趣的事物，
-      也期待結交來自世界各地的朋友 💕
-  </p>
-
-  <h2>🌟 個人優點</h2>
-  <p>
-    個性開朗、親切有禮，  
-    對人友善且容易相處。  
-    做事認真負責，願意學習新事物，  
-    面對工作態度積極。
-  </p>
-
-  <h2>🌱 個人缺點</h2>
-  <p>
-    有時對自己要求較高，  
-    遇到事情容易緊張或想得比較多，  
-    目前正學習調整心態，  
-    讓自己能更有自信地完成工作。
-  </p>
-
-  <div class="photo-gallery">
-    <img src="images/PHOTO1.jpeg" alt="照片1" class="gallery-photo">
-    <img src="images/PHOTO2.jpeg" alt="照片2" class="gallery-photo">
+  <h2>🎀 我的三個可愛角色</h2>
+  <div class="role-cards">
+    <div class="role-card">
+      <div class="role-icon">📚</div>
+      <h3>學習小兔</h3>
+      <p>熱愛學習新知識與新科技。</p>
+    </div>
+    <div class="role-card">
+      <div class="role-icon">💻</div>
+      <h3>細心小熊</h3>
+      <p>資料整理細心，做事認真負責。</p>
+    </div>
+    <div class="role-card">
+      <div class="role-icon">🎵</div>
+      <h3>親切小貓</h3>
+      <p>個性友善，喜歡語言與音樂。</p>
+    </div>
   </div>
 
+  <h2>🌟 個人優點</h2>
+  <p>個性開朗、親切有禮，做事認真負責，願意學習新事物。</p>
+
+  <h2>🌱 個人缺點</h2>
+  <p>有時對自己要求較高，正學習調整心態並提升自信。</p>
+
   <h2>💼 工作經驗（泰國）</h2>
-  <p>
-    曾協助文件整理、資料建立與基本審核，  
-    並與同事進行日常溝通，  
-    確保資料正確無誤。
-  </p>
+  <p>曾協助文件整理、資料建立與基本審核，確保資料正確。</p>
 
   <h2>📬 聯絡方式</h2>
-  <p>Email：  
-    <a href="mailto:puridamachekuy@gmail.com">
-      puridamachekuy@gmail.com
-    </a>
-  </p>
-  <p>Instagram：  
-    <a href="https://www.instagram.com/puridabechekau" target="_blank">
-      @puridabechekau
-    </a>
-  </p>
+  <p>Email：puridamachekuy@gmail.com</p>
+  <p>Instagram：@puridabechekau</p>
 
 </div>
 
 <footer>
-  © 2025 Purida Be
-```
+  © 2025 Purida Bechekau ｜ 用心學習中 💖
+</footer>
+
+</body>
+</html>
