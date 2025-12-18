@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>李敏瑛 Purida Bechekau｜個人介紹</title>
+  <title>���ӷ� Purida Bechekau�U�ӤH����</title>
 
   <style>
     body {
@@ -87,6 +87,28 @@
       font-size: 0.85em;
     }
 
+    /* Photo gallery */
+    .photo-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-photo:hover {
+      transform: scale(1.05);
+    }
+
     a {
       color: #ff69b4;
       text-decoration: none;
@@ -105,90 +127,57 @@
 <body>
 
   <header>
-    <h1>李敏瑛 Purida Bechekau</h1>
-    <p>來自泰國的清邁女孩 🌸</p>
+    <h1>���ӷ� Purida Bechekau</h1>
+    <p>�Ӧۮ��ꪺ�M�ڤk�� ????</p>
   </header>
 
   <div class="intro-section">
 
-    <!-- 個人大頭照 -->
-    <img src="images/yourphoto.png" alt="個人照片" class="profile-photo">
+    <img src="images/mypic_22.png" alt="�ӤH�Ӥ�" class="profile-photo">
 
     <div class="cute-tags">
-      <span>🌸 泰國女孩</span>
-      <span>📚 愛學習</span>
-      <span>🎧 音樂控</span>
-      <span>💻 新科技</span>
-      <span>✨ 新體驗中</span>
+      <span>???? ����k��</span>
+      <span>?? �R�ǲ�</span>
+      <span>?? ���ֱ�</span>
+      <span>?? �s���</span>
+      <span>? �s���礤</span>
     </div>
 
-    <h2>🌷 基本資料</h2>
-    <p><strong>國籍：</strong>泰國</p>
-    <p><strong>年齡：</strong>19 歲</p>
+    <h2>?? �򥻸��</h2>
+    <p><strong>���y�G</strong>����</p>
+    <p><strong>�~�֡G</strong>19 ��</p>
 
-    <h2>🎧 興趣與學習方向</h2>
+    <h2>?? ����P�ǲߤ�V</h2>
     <p>
-      我的興趣是學習新科技、了解企業運作流程，以及進行資料整理與分析。  
-      此外，我也喜歡學習語言與聽音樂，持續提升溝通能力，  
-      並在工作中培養細心與效率。
-    </p>
-    <p>
-      吃喝玩樂之外，也想嘗試一些以前沒做過的事情，  
-      為生活與學習增添更多可能性 ✨
+      �ڪ�����O�ǲ߷s��ޡB�F�ѥ��~�B�@�y�{�A�H�ζi���ƾ�z�P���R�C
+      ���~�A�ڤ]���w�ǲ߻y���Pť���֡A���򴣤ɷ��q��O�A
+      �æb�u�@�����i�Ӥ߻P�Ĳv�C
     </p>
 
-    <h2>🌏 自我介紹</h2>
+    <h2>???��? �ۧڤ���</h2>
     <p>
-      大家好！我是李敏瑛，來自泰國，目前在台灣就讀大學。  
-      我喜歡探索不同文化、美食與音樂，  
-      也樂於學習新事物並提升自我能力。  
-      希望能在台灣累積實務經驗，逐步成長為更專業的人 🌱
-    </p>
-        <!-- 新增照片區塊 -->
- <div class="photo-gallery">
-  <img src="images/photo1.jepg" alt="照片1" class="gallery-photo">
-  <img src="images/photo2.jepg" alt="照片2" class="gallery-photo">
- </div>
-
-    <h2>💼 工作經驗（泰國）</h2>
-    <p>
-      在泰國工作期間，我主要協助公司處理文件相關事務，  
-      包括資料整理、文件建立與基本審核，  
-      並與同事進行日常溝通，以確保資料正確無誤。
-    </p>
-    <p>
-      透過這段經驗，我培養了細心與責任感，  
-      也更加了解企業的基本運作流程。
+      �j�a�n�I�ڬO���ӷ�A�Ӧۮ���A�ثe�b�x�W�NŪ�j�ǡC
+      �Ʊ��b�x�W�ֿn��ȸg��A�v�B��������M�~���H ??
     </p>
 
-    <h2>👍 個人優點</h2>
+    <div class="photo-gallery">
+      <img src="images/PHOTO1.jpeg" alt="�Ӥ�1" class="gallery-photo">
+      <img src="images/PHOTO2.jpeg" alt="�Ӥ�2" class="gallery-photo">
+    </div>
+
+    <h2>?? �u�@�g��]����^</h2>
     <p>
-      我做事認真負責，對文件與資料處理相當細心，  
-      能準時完成交辦事項，並願意主動學習新事物，  
-      配合團隊完成工作目標。
+      ��U����z�B��ƫإ߻P�򥻼f�֡A
+      �ûP�P�ƶi���`���q�A�T�O��ƥ��T�L�~�C
     </p>
 
-    <h2>🧩 個人缺點</h2>
-    <p>
-      面對不熟悉的工作內容時，初期會花較多時間學習與確認細節。  
-      目前仍持續累積實務經驗，期望逐步提升效率與專業能力。
-    </p>
-
-    <h2>✨ 對自己的期許</h2>
-    <p>
-      我期許自己能持續精進專業知識，  
-      熟悉公司系統與各項工作流程，  
-      提升文件建立與審核能力，  
-      並在團隊中發揮責任感，為公司創造實質價值。
-    </p>
-
-    <h2>📮 聯絡方式</h2>
-    <p>Email：
+    <h2>?? �p���覡</h2>
+    <p>Email�G
       <a href="mailto:puridamachekuy@gmail.com">
         puridamachekuy@gmail.com
       </a>
     </p>
-    <p>Instagram：
+    <p>Instagram�G
       <a href="https://www.instagram.com/puridabechekau" target="_blank">
         @puridabechekau
       </a>
@@ -197,8 +186,8 @@
   </div>
 
   <footer>
-    © 2025 Purida Bechekau <br>
-    用心學習中｜努力成長中 🌱
+    c 2025 Purida Bechekau <br>
+    �Τ߾ǲߤ��U�V�O������ ??
   </footer>
 
 </body>
